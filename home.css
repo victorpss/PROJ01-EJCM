@@ -1,0 +1,322 @@
+body{
+    background-color: #181B24;
+    margin: 0;
+}
+
+.header{
+    width: 100%;
+    height: 95px;
+    background-color: #14161D;
+    display: flex;
+}
+
+#logo{
+    width: 60px;
+    height: 62.35px;
+    position: relative;
+    top: 16px;
+    left: 43px;
+}
+
+.input{
+    position: relative;
+    left: 8%;
+    top: 30px;
+}
+
+#buscarInput{
+    width: 670px;
+    height: 35px;
+    background-color: #484848;
+    border: 0;
+    border-radius: 25px;
+    padding-left: 18px; /* para o 'Buscar' */
+    color: white;
+    font-size: 20px;
+}
+
+#buscarInput:focus{
+    outline: 1px solid #14161D; /* borda quando a caixa está selecionada */
+}
+
+#buscarInput::placeholder{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: white;
+    opacity: .5;
+}
+
+#lupa {
+    position: absolute;
+    right: 29px;
+    top: 8%;
+    width: 25px;
+    height: 23.62px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sideMenu{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 47px 0 0 36px;
+}
+
+#home, #bell, #comment, #setting{
+    width: 47px;
+    height: 47px;
+    cursor: pointer;
+}
+
+.secaoCentral{
+    display: flex; 
+    flex-direction: column; 
+    margin-top: 37px; 
+    gap:30px;
+}
+
+.criarPost{
+    width: 670px;
+    height: 142px;
+    border: 1px solid #484848;
+    border-radius: 10px;
+}
+
+.links{
+    display: flex;
+    gap: 11px;
+    margin: 0;
+    padding-left: 31px;
+}
+
+#image, #emoji, #link{
+    cursor: pointer;
+}
+
+.postBotoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#inputCriarPost{
+    font-family: "Inter", sans-serif;
+    width: 666px;
+    height: 80px;
+    background-color: transparent;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    font-size: 15px;
+    text-indent: 31px;
+}
+
+#inputCriarPost:focus{
+    outline: 0px; /* borda quando a caixa está selecionada */
+}
+
+#inputCriarPost::placeholder{
+    font-size: 15px;
+    color: white;
+    opacity: 1;
+}
+
+#postarButton{
+    width: 98px;
+    height: 40px;
+    background-color: #22A2F2;
+    color: black;
+    border: 0;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 33px;
+}
+
+#postarButton:hover{
+    background-color: #1a7bb8;
+}
+
+#postarButton:active{
+    border: 1px solid black;
+}
+
+.post{
+    width: 670px;
+    height: 670px;
+    border: 1px solid #484848;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.postInfo{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16.12px;
+}
+
+.user{
+    display: flex;
+    gap:15px;
+}
+
+.autorPost{
+    color: white;
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+}
+
+#acoes{
+    display: flex;
+    gap: 18px;
+}
+
+#comentar, #like, #favorito{
+    cursor: pointer;
+}
+
+.postText{
+    width: 500px;
+    color: white;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+#sugestoes{
+    width: 311px;
+    height: 370px;
+    margin-right: 10%;
+    padding-top: 17px;
+}
+
+.sugestao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fotoArroba{
+    display: flex;
+    gap: 8px;
+}
+
+.sugestoesText, .userArroba{
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    color: white;
+}
+
+.sugestoesButton{
+    width: 90px;
+    height: 35.56px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    background-color: #222222;
+    border: 0;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #22A2F2;
+}
+
+.sugestoesButton:hover{
+    background-color: #474747;
+}
+
+.sugestoesButton:active{
+    background-color: #161616;
+    color: #1e86c7;
+}
+
+@media (max-width: 1240px) {
+    main{
+        flex-direction: column-reverse;
+    }
+
+    #buscarInput{
+        width: 246px;
+        margin-left: 20px;
+    }
+
+    .sideMenu{
+        flex-direction: row;
+        padding: 15px 0px;
+        background-color: #14161D;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #sugestoes{
+        width: 100%;
+        height: 280px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: -90px;
+    }
+    
+    .sugestao{
+        padding: 3%;
+    }
+    
+    .sugestoesText{
+        position: absolute;
+        font-size: 22px;
+    }
+    
+    #fotoUsuario1,#fotoUsuario2,#fotoUsuario3,#fotoUsuario4{
+        width: 50px;
+    }
+    
+    .fotoArroba{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .userArroba{
+        font-size: 16px;
+    }
+    
+    .sugestoesButton{
+        display: none;
+    }
+    
+    .secaoCentral{
+        align-items: center;
+    }
+    
+    .criarPost, #inputCriarPost{
+        width: 350px;
+        z-index: 1;
+    }
+    
+    .post{
+        width: 350px;
+        height: 500px;
+        margin-bottom: 150px;
+    }
+    
+    #postImage{
+        width: 300px;
+    }
+    
+    .postInfo, .postText{
+        width: 338px;
+    }
+
+}
