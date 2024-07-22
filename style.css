@@ -1,16 +1,16 @@
-@font-face {
+@font-face{
     font-family: "Inter", sans-serif;
     src: url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap")
         format("opentype");
 }
-@font-face {
+@font-face{
     font-family: "Inter", sans-serif;
     font-weight: bold;
     src: url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap")
         format("opentype");
 }
 
-body {
+body{
     font-family: "Inter", sans-serif;
     background-color: #181B24;
     height: 100vh; 
@@ -20,19 +20,19 @@ body {
     align-items: center;
 }
 
-.wrapper {
+.wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 254px;
 }
 
-#logoCadastro {
+#logoCadastro{
     width: 293px;
     height: 304px;
 }
 
-.cadastro, .login {
+.cadastro, .login{
     background-color: #F2F2F2;
     width: 547px;
     height: 767px;
@@ -51,7 +51,7 @@ body {
     margin: 0px;
 }
 
-.box {
+.box{
     width: 400px;
     height: 57.5px;
     border: 1px solid black;
@@ -60,7 +60,7 @@ body {
     position: relative;
 }
 
-.boxTitle {
+.boxTitle{
     font-size: 12px;
     font-weight: 400;
     background-color: #F2F2F2;
@@ -70,7 +70,7 @@ body {
     left: 10px;
 }
 
-.inputCadastro, .inputLogin {
+.inputCadastro, .inputLogin{
     width: 367px;
     height: 25px;
     font-size: 16px;
@@ -80,12 +80,12 @@ body {
     border-radius: 8px;
 }
 
-.inputContainer {
+.inputContainer{
     display: flex;
     align-items: center;
 }
 
-.visualizacaoSenha {
+.visualizacaoSenha{
     position: absolute;
     right: 20px;
     cursor: pointer;
@@ -93,7 +93,7 @@ body {
     height: 20px;
 }
 
-.inputTermos, .inputEsqueciSenha {
+.inputTermos, .inputEsqueciSenha{
     display: flex;
     width: 400px;
     height: 48px;
@@ -105,7 +105,7 @@ body {
     justify-content: end;
 }
 
-#textTermos, #textEsqueciSenha {
+#textTermos, #textEsqueciSenha{
     font-size: 16px;
     text-align: center;
     margin: 0;
@@ -118,7 +118,7 @@ body {
     text-align: center;
 }
 
-.termos {
+.termos{
     color: #105F74;
     text-decoration: underline;
 }
@@ -128,7 +128,7 @@ body {
     text-decoration: none;
 }
 
-#cadastrarButton {
+#cadastrarButton{
     width: 400px;
     height: 49px;
     background-color: #105F74;
@@ -143,7 +143,7 @@ body {
     font-weight: bold;
 }
 
-#fazerLogin {
+#fazerLogin{
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
@@ -152,7 +152,7 @@ body {
 }
 
 
-@media (max-width: 1150px) {
+@media (max-width: 1150px){
     .wrapper{
         gap: 21px;
         flex-direction: column-reverse;
@@ -184,14 +184,14 @@ body {
         text-align: center;
     }
 
-    .box {
+    .box{
         width: 250.5px;
         height: 43px;
         border-radius: 6px;
         margin-bottom: 27px;
     }
 
-    .inputCadastro, .inputLogin {
+    .inputCadastro, .inputLogin{
         width: 218px;
         height: 11px;
         font-size: 16px;
@@ -201,11 +201,11 @@ body {
         border-radius: 6px;
     }
 
-    .visualizacaoSenha {
+    .visualizacaoSenha{
         right: 19px;
     }
 
-    .inputTermos, .inputEsqueciSenha {
+    .inputTermos, .inputEsqueciSenha{
         width: 250.5px;
         height: 27px;
         padding: 0;
@@ -215,7 +215,7 @@ body {
         padding-bottom: 31px;
     }
 
-    #textTermos, #textEsqueciSenha {
+    #textTermos, #textEsqueciSenha{
         font-size: 12px;
     }
 
@@ -225,7 +225,7 @@ body {
         width: 259px;
     }
 
-    #cadastrarButton {
+    #cadastrarButton{
         width: 201px;
         height: 37px;
     }
