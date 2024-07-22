@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/5a63e0b3-6170-4adc-8c67-fc38555a0e69/Logo%20TT.svg?v=1721306621301"
+    />
+    <title>TTwitter</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  
+  <body>
+    
+    <div class="wrapper">
+      <main class="cadastro">
+        <h2 id="cadastroTitle">
+          Cadastro
+        </h2>
+        <div class="box" id="boxNome">
+          <label class="boxTitle">
+            Nome
+          </label>
+          <input class="inputCadastro" type="text" placeholder="nome de usuário">
+        </div>
+        <div class="box" id="boxEmail">
+          <label class="boxTitle">
+            Email
+          </label>
+          <input class="inputCadastro" type="email" placeholder="example@email.com">
+        </div>
+        <div class="box" id="boxDataNasc">
+          <label class="boxTitle">
+            Data de Nascimento
+          </label>
+          <input class="inputCadastro" type="date">
+        </div>
+        <div class="box" id="boxSenha">
+          <label class="boxTitle">
+            Senha
+          </label>
+          <div class="inputContainer">
+            <input class="inputCadastro" type="password" placeholder="••••••••">
+            <img class="visualizacaoSenha" src="https://cdn.glitch.global/5a63e0b3-6170-4adc-8c67-fc38555a0e69/Vector.svg?v=1721312677770" alt="Revelar/Esconder Senha">
+          </div>
+        </div>
+        <div class="box" id="boxConfirmarSenha">
+          <label class="boxTitle">
+            Confirmar Senha
+          </label>
+          <div class="inputContainer">
+            <input class="inputCadastro" type="password" placeholder="••••••••">
+            <img class="visualizacaoSenha" src="https://cdn.glitch.global/5a63e0b3-6170-4adc-8c67-fc38555a0e69/Vector.svg?v=1721312677770" alt="Revelar/Esconder Senha">
+          </div>
+        </div>
+        <div class="inputTermos">
+          <input type="checkbox">
+          <p id="textTermos">
+            Li e estou de acordo com os <a class="termos" href="https://x.com/pt/tos" target="_blank">Termos</a> e <a class="termos" href="https://x.com/pt/tos" target="_blank">Condições de Uso</a>
+          </p>
+        </div>
+        <button type="button" id="cadastrarButton">
+          <p id="cadastrarButtonText">
+            Cadastrar
+          </p>
+        </button>
+        <a id="fazerLogin" href="home.html">Fazer Login</a>
+      </main>
+
+      <img
+        id="logoCadastro"
+        src="https://cdn.glitch.global/5a63e0b3-6170-4adc-8c67-fc38555a0e69/Logo%20TT.svg?v=1721306621301"
+        alt="Logo do TTwitter"
+      />
+      
+    </div>
+    <script>
+      document.querySelectorAll('.visualizacaoSenha').forEach(item => {
+        item.addEventListener('click', function() {
+          const input = this.previousElementSibling;
+          if (input.type === "password") {
+            input.type = "text";
+          } else {
+            input.type = "password";
+          }
+        });
+      });
+      
+      document.getElementById('cadastrarButton').addEventListener('click', function() {
+      window.location.href = 'login.html';
+    });
+    </script>
+  </body>
+</html>

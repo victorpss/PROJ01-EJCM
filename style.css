@@ -1,0 +1,136 @@
+[hidden] {
+    display: none !important;
+  }
+  
+  @font-face {
+    font-family: "Inter", sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap")
+      format("opentype");
+  }
+  @font-face {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    src: url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap")
+      format("opentype");
+  }
+  
+  body {
+    font-family: "Inter", sans-serif;
+    background-color: #181B24;
+    height: 100vh; 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 254px;
+  }
+  
+  #logoCadastro {
+    width: 293px;
+    height: 304px;
+  }
+  
+  .cadastro {
+    background-color: #F2F2F2;
+    width: 547px;
+    height: 767px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #cadastroTitle{
+    padding: 50px 0px;
+    margin: 0px;
+  }
+  
+  .box {
+    width: 400px;
+    height: 57.5px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .boxTitle {
+    font-size: 12px;
+    font-weight: 400;
+    background-color: #F2F2F2;
+    padding: 0 4px 0 3px;
+    position: absolute; /* Permite posicionamento sobre a borda */
+    top: -7px; /* Ajusta a posição do título */
+    left: 10px; /* Ajusta a posição do título */
+  }
+  
+  .inputCadastro {
+    width: 367px;
+    height: 25px;
+    font-size: 16px;
+    background-color: #F2F2F2;
+    padding: 16px;
+    border: 0;
+    border-radius: 8px;
+  }
+  
+  .inputContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .visualizacaoSenha {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .inputTermos {
+    display: flex;
+    width: 400px;
+    height: 48px;
+    align-items: flex-start;
+    padding-bottom: 41px;
+  }
+  
+  #textTermos {
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .termos {
+    color: #105F74;
+    text-decoration: underline;
+  }
+  
+  #cadastrarButton {
+    width: 400px;
+    height: 49px;
+    background-color: #105F74;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  #cadastrarButtonText{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #fazerLogin {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #105F74;
+    margin-top: 20px;
+  }
